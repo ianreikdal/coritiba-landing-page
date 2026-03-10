@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site  do Coritiba, com notícias, jogadores e informações sobre o time.">
+    <title>Página Inicial - Coritiba</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Coritiba</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#jogadores">Jogadores</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/banner1.jpg" alt="Estádio do Coritiba - Vista 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner2.jpg" alt="Estádio do Coritiba - Vista 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner3.jpg" alt="Estádio do Coritiba - Vista 3">
+                    </div>
+                </div>
+                <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="goToSlide(0)"></span>
+                    <span class="indicator" onclick="goToSlide(1)"></span>
+                    <span class="indicator" onclick="goToSlide(2)"></span>
+                </div>
+            </div>
+            <div class="banner-text">
+                <h2>Bem-vindo ao Coritiba!</h2>
+                <p>Veja as melhores imagens da maior torcida do Estado.</p>
+            </div>
+        </section>
+
+        <section class="info">
+            <h2>Sobre o Coritiba</h2>
+            <p>Fundado em 1909, o Coritiba Foot Ball Club é um dos clubes mais tradicionais do futebol brasileiro,
+                conhecido como "Coxa-Branca". Nosso estádio, o Major Antônio Couto Pereira, é palco de grandes partidas
+                e eventos.</p>
+        </section>
+
+        <section class="news" id="noticias">
+            <h2>Últimas Notícias</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <h3>Base 100% no Paranaense</h3>
+                    <p>Confira como o Coritiba está investindo na base para o Campeonato Paranaense.</p>
+                    <a href="https://www.coritiba.com.br/noticias/1329480" target="_blank">Leia mais</a>
+                </div>
+                <div class="news-card">
+                    <h3>Pequeno Cotolengo participa de manhã especial</h3>
+                    <p>Evento de integração no CT da Graciosa com participação especial.</p>
+                    <a href="https://www.coritiba.com.br/noticias/1325728" target="_blank">Leia mais</a>
+                </div>
+                <div class="news-card">
+                    <h3>Coritiba vence na Copa do Brasil Sub-17</h3>
+                    <p>Vitória contra o Juventude na primeira fase da competição.</p>
+                    <a href="https://www.coritiba.com.br/noticias/1324389" target="_blank">Leia mais</a>
+                </div>
+            </div>
+        </section>
+        <section class="news" id="jogadores">
+            <h2>Jogadores</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">1</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">PEDRO MORISCO</h5>
+                                    <p class="card-text">GOLEIRO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">67</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">BENASSI</h5>
+                                    <p class="card-text">GOLEIRO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">87</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">GABRIEL LEITE</h5>
+                                    <p class="card-text">GOLEIRO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">12</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">PEDRO RANGEL</h5>
+                                    <p class="card-text">GOLEIRO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador5.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">3</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">MAICON</h5>
+                                    <p class="card-text">ZAGUEIRO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador6.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">4</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">MOLEDO</h5>
+                                    <p class="card-text">ZAGUEIRO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador7.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">23</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TIAGO CÓSER</h5>
+                                    <p class="card-text">ZAGUEIRO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador8.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">55</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">JACY</h5>
+                                    <p class="card-text">ZAGUEIRO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador9.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">21</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">THIAGO SANTOS</h5>
+                                    <p class="card-text">ZAGUEIRO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador10.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador11.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador12.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador13.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador14.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador15.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador16.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador17.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador18.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador19.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador20.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador21.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador22.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador23.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador24.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador25.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador26.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador27.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador28.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador29.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador30.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">3</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">Jogador 3</h5>
+                                    <p class="card-text">Meio-campo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador31.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador32.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 player-card">
+                        <img src="img/jogadores/jogador33.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="player-info">
+                                <h2 class="player-number">2</h2>
+                                <div class="player-details">
+                                    <h5 class="card-title">TINGA</h5>
+                                    <p class="card-text">LATERAL-DIREITO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Coritiba. Todos os direitos reservados.</p>
+        <p>Contato: email@coritiba.com</p>
+    </footer>
+</body>
+
+</html>
